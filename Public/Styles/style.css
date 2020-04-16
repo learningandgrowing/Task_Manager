@@ -1,15 +1,27 @@
 legend{
     text-align: center;
+<<<<<<< HEAD
     color:green;
 }
 
 body{
     background-color: black;
+=======
+    color:blueviolet;
+}
+
+body{
+    background-color: bisque;
+>>>>>>> 96189abf3ae53b9e5ffcc38c9306105d94d8776e
 }
 
 .jumbotron{
     background-color: paleturquoise !important;
+<<<<<<< HEAD
     color: violet;
+=======
+    color: blueviolet;
+>>>>>>> 96189abf3ae53b9e5ffcc38c9306105d94d8776e
    align-content: center;
    text-align: center;    
 }

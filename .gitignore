@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 .env
 /node_modules
+=======
+/node_modules
+*.json
+>>>>>>> 96189abf3ae53b9e5ffcc38c9306105d94d8776e

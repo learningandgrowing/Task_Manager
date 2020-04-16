@@ -1,0 +1,95 @@
+legend{
+    text-align: center;
+    color:blueviolet;
+}
+
+body{
+    background-color: bisque;
+}
+
+.jumbotron{
+    background-color: paleturquoise !important;
+    color: blueviolet;
+   align-content: center;
+   text-align: center;    
+}
+
+/* input, label{
+    display: inline-block;
+} */
+.block{
+    display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+}
+.button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin-left: 46%;
+    background: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+#myList > ul {
+    display: none;
+    list-style-type:none;
+  } 
+    
+#myList > ul > li {
+      list-style:none; 
+  } 
+    
+#myList > li {
+     list-style:none;   
+    font-weight: bold;
+  }
+  
+  ul > .multi{
+      border: solid black 1px;
+  }
+ul > .multi::after {
+    content:' +'
+  }
+    
+  ul > .multi-opened::after {
+    content:' -'
+  }
+
+#task{
+    width: 80%;
+    height: 40px;
+}
+
+#notes{
+    width: 100%;
+    height: 40px;
+}
+
+#desc{
+    width: 100%;
+    height: 80%;
+}
+
+#props{
+    width: 40%;
+    height: 30px;
+}
+
+#button{
+    display: block;
+    position: absolute;
+    left: 47%;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#task-item {
+    border:1px solid grey;
+    
+}

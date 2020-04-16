@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <script src="./Scripts/jquery-3.4.1.js"></script>
+    <script src="./Scripts/taskPost.js"></script>
+    <script src="./Scripts/expand.js"></script>
+    <title>Add Task</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Task and Notes Manager</h1>
+    </div>
+    <form>
+        <div class="container">
+            <legend>Add Task</legend><br />
+
+            <div class="row">
+                <div class="block">
+                    <h3>Task Title &emsp;</h3>
+                    <input type="text" id="task" required>
+                </div>
+            </div><br /><br />
+
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="block">
+                        <br />
+                        <h3>Due Date &emsp;</h3>
+                        <input type="date" id="due" required>
+                        <script>
+                            document.getElementById('due').value = new Date(new Date().getTime() + 24 * 60 * 60 * 1000 - new Date().getTimezoneOffset() * 60 * 1000).toISOString().substr(0,10);
+                        </script>
+                    </div><br />
+                    
+                    <div class="block">
+                        <h3>Status &emsp;</h3>
+                        <input type="radio" id="incomplete" name="task-status" value="incomplete" checked >
+                        <label for="incomplete">&nbsp; Incomplete</label>&emsp;
+                        <input type="radio" id="complete" name="task-status" value="complete">
+                        <label for="complete">&nbsp; Complete</label>&emsp;
+                    </div><br />
+                    
+                    <div class="block">
+                        <h3>Priority &emsp;</h3>
+                        <input type="radio" id="high" name="priority" value="high">
+                        <label for="high">&nbsp; High</label>&emsp;
+                        <input type="radio" id="medium" name="priority" value="medium" checked >
+                        <label for="medium">&nbsp; Medium</label>&emsp;
+                        <input type="radio" id="low" name="priority" value="low">
+                        <label for="low">&nbsp; Low</label>&emsp;
+                    </div>
+                      
+                </div>
+
+                <div class="col-12 col-sm-7">
+                    <h3>Description</h3>
+                    <input type="text" id="desc">
+                </div>
+            </div><br />
+
+            <div class="row">
+                <div class="block">
+                    <h3>Add Special Note &emsp;</h3>
+                    <input type="text" id="notes" style="width: 100%;">
+                </div>
+            </div>
+
+        </div><br />
+
+        <input type="button" value="Add" id="button"><br />
+    </form><br />
+    <a href="./index.html" style="margin: 10px;">Back to List</a><rr />
+
+    <footer class="jumbotron">
+        <p><span style="color: red;">Copyright</span> © 1999-2020 Samriti_Modgil. All rights reserved.</p>
+    </footer>
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
+</html>
